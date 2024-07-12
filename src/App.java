@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.Map;
 
+import Ejercicios.contorllers.Laberinto;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Programación Dinámica");
@@ -78,12 +80,18 @@ public class App {
 
     public static void runEjercicio() {
 
-        // boolean[][] grid = {
-        // { true, true, true, true },
-        // { false, false, false, true },
-        // { true, true, false, true },
-        // { true, true, false, true }
-        // };
+       boolean[][] grid = {
+       { true, true, true, true },
+       { false, false, false, true },
+       { true, true, false, true },
+       { true, true, false, true }
+       };
+       Laberinto lab = new Laberinto();
+       System.out.println(lab.getPath(grid));
+
+
+       
+       
 
     }
 }
